@@ -4,19 +4,15 @@
 	export let segment;
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+<div id="overlayer"></div>
+<div class="loader">
+	<div class="spinner-border text-primary" role="status">
+		<span class="sr-only">Loading...</span>
+	</div>
+</div>
 
-<Nav {segment}/>
+<div class="site-wrap">
+	<Nav {segment}/>
 
-<main>
 	<slot></slot>
-</main>
+</div>

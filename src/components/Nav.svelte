@@ -2,59 +2,35 @@
 	export let segment;
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+<div class="site-mobile-menu site-navbar-target">
+	<div class="site-mobile-menu-header">
+		<div class="site-mobile-menu-close mt-3">
+			<span class="icon-close2 js-menu-toggle"></span>
+		</div>
+	</div>
+	<div class="site-mobile-menu-body"></div>
+</div>
+   
+    
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+	<div class="container">
+		<div class="row align-items-center">		
+			<div class="col-6 col-xl-2">
+				<h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Finances<span class="text-primary">.</span> </a></h1>
+			</div>
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
-</style>
-
-<nav>
-	<ul>
-		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
-	</ul>
-</nav>
+			<div class="col-12 col-md-10 d-none d-xl-block">
+				<nav class="site-navigation position-relative text-right" role="navigation">
+					<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+						<li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
+						<li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
+						<li class="social"><a href="#contact-section" class="nav-link"><span class="icon-linkedin"></span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+		</div>
+	</div>
+	
+</header>
