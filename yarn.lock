@@ -945,8 +945,8 @@ load-json-file@^4.0.0:
     strip-bom "^3.0.0"
 
 lodash@^4.17.13:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
 
 loose-envify@^1.0.0:
   version "1.4.0"
@@ -958,7 +958,7 @@ lower-case@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
 
-magic-string@^0.25.2, magic-string@^0.25.3:
+magic-string@^0.25.2:
   version "0.25.4"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.4.tgz#325b8a0a79fc423db109b77fd5a19183b7ba5143"
   dependencies:
@@ -1200,14 +1200,6 @@ rollup-plugin-commonjs@^10.0.0:
     is-reference "^1.1.2"
     magic-string "^0.25.2"
     resolve "^1.11.0"
-    rollup-pluginutils "^2.8.1"
-
-rollup-plugin-inject@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-inject/-/rollup-plugin-inject-3.0.1.tgz#62b619d28988aca60eb17ccfbf553e25feb8c0f9"
-  dependencies:
-    estree-walker "^0.6.1"
-    magic-string "^0.25.3"
     rollup-pluginutils "^2.8.1"
 
 rollup-plugin-node-resolve@^5.2.0:
